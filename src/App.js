@@ -1,23 +1,40 @@
-import './App.css';
-import logo from './logo.svg';
+import './App.module.scss';
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <div>
+          <a href="/#">Logo</a>
+          <nav>
+            <ul>
+              <li>
+                <a href="/#">Features</a>
+              </li>
+              <li>
+                <a href="/#">Featured on Product Hunt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
-    </div>
+      <main>
+        <section class="section_1">
+          <h1>A space odyssey awaits you.</h1>
+          <br />
+          <p>
+            Beautiful space images and information of your current sky map
+            location on every <a href="/#">new tab</a>.
+          </p>
+          <br />
+          <div>
+            <a href="/#">Link</a>
+          </div>
+          <br />
+          <div>Image</div>
+        </section>
+      </main>
+      <footer>Footer</footer>
+    </>
   );
 }
